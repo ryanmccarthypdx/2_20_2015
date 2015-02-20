@@ -1,0 +1,36 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+  <title>Family Brothers Pizza</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/jquery-1.11.2.js"></script>
+  <script src="js/pizzeria-scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>
+      Family Brothers Pizza<br>
+      <small><em>You've tried the rest, now we're open!</em></small>
+    </h1>
+    <form id="input">
+      <label for="diameter">What diameter pizza would you like?:</label>
+      <input id="diameter" type="text"><br>
+      <label for="topping">What sort of pizza would you like?:</label>
+      <select id="topping" selected="cheese">
+        <option value="cheese">Cheese</option>
+        <option value="pepperoni">Pepperoni</option>
+      </select><br>
+      <button type="submit" class="btn btn-danger">Make-a my pizza!</button>
+    </form>
+    <div id="result">
+      <h3>Okey dokey, we'll a-putta you pizza in-a the oven:</h3>
+        <p>Number of slices: <span class="slices"></span></p>
+        <p>Number of pepperonis: <span class="pepperoni"></span></p>
+        <p>Grams of cheese: <span class="cheese"></span></p>
+      <h3>Your a-total bill shall-a be:</h3>
+        <p>One <span class="pizza-description"></span> will cost: <span class="cost"></span></p>
+    </div>
+  </div>
+</body>
+</html>
