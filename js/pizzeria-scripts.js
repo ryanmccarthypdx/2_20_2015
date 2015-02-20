@@ -18,5 +18,12 @@ var Pizza = {
     } else {
       return 0;
     }
+  },
+  cheese: function() {
+    if (this.topped) {
+      return Math.round(this.area() * 0.85);
+    } else {
+      return Math.round(this.area() * 1);
+    }
   }
 };

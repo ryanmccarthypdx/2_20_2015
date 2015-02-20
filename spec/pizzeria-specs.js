@@ -24,12 +24,26 @@ describe("Pizza", function() {
       testPizza.diameter = 20;
       testPizza.topped = false;
       expect(testPizza.pepperoni()).to.equal(0);
-    });    
-    it("calculates the number of pepperoni based on the number of slices", function() {
+    });
+    it("calculates the number of pepperonis based on the number of slices", function() {
       var testPizza = Object.create(Pizza);
       testPizza.diameter = 20;
       testPizza.topped = true;
       expect(testPizza.pepperoni()).to.equal(22);
+    });
+  });
+  describe("cheese", function() {
+    it("returns one gram of cheese per square inch for a cheese pizza", function() {
+      var testPizza = Object.create(Pizza);
+      testPizza.diameter = 20;
+      testPizza.topped = false;
+      expect(testPizza.cheese()).to.equal(314);
+    });
+    it("returns 850 milligrams of cheese per square inch for a pepperoni pizza", function() {
+      var testPizza = Object.create(Pizza);
+      testPizza.diameter = 20;
+      testPizza.topped = true;
+      expect(testPizza.cheese()).to.equal(267);
     });
   });
 });
