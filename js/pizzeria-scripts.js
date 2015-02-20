@@ -1,13 +1,15 @@
 var Pizza = {
   diameter: 0,
   // topped: false,
-  slices: function(){
-    var area = Math.round(Math.PI * Math.pow(this.diameter / 2, 2));
+  area: function() {
+    return Math.round(Math.PI * Math.pow(this.diameter / 2, 2));
+  },
+  slices: function() {
     var minSlices = 4;
-    if (area < 100) {
+    if (this.area() < 100) {
       return minSlices;
     } else {
-      return Math.floor(area / 25);
+      return Math.floor(this.area() / 25);
     }
   }
 };
