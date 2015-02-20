@@ -15,7 +15,7 @@
     </h1>
     <form id="input">
       <label for="diameter">What diameter pizza would you like?:</label>
-      <input id="diameter" type="text"><br>
+      <input id="diameter" type="text"><label>inches</label><br>
       <label for="topping">What sort of pizza would you like?:</label>
       <select id="topping" selected="cheese">
         <option value="cheese">Cheese</option>
@@ -24,12 +24,13 @@
       <button type="submit" class="btn btn-danger">Make-a my pizza!</button>
     </form>
     <div id="result">
-      <h3>Okey dokey, we'll a-putta you pizza in-a the oven:</h3>
-        <p>Number of slices: <span class="slices"></span></p>
-        <p>Number of pepperonis: <span class="pepperoni"></span></p>
-        <p>Grams of cheese: <span class="cheese"></span></p>
-      <h3>Your a-total bill shall-a be:</h3>
-        <p>One <span class="pizza-description"></span> will cost: <span class="cost"></span></p>
+      <h2>Okey dokey, we'll a-putta you pizza in-a the oven:</h2>
+        <p>Number of pizza slices: <span class="slices output"></span></p>
+        <p>Number of pepperonis: <span class="pepperoni output"></span></p>
+        <p>Grams of cheese: <span class="cheese output"></span></p>
+      <h2><u>Your a-total bill shall-a be:</u></h2>
+        <h4>A <span class="pizza-description output"></span> pizza will cost: <span class="cost output"></span></h4>
+        <p><strong><em>Cough up-a the money or I break-a you legs</strong></em></p>
     </div>
   </div>
 </body>
